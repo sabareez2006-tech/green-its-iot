@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Backend runtime state
+backend/state.json
+
+# macOS system files
+.DS_Store
+

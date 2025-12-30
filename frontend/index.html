@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Green Intelligent Transportation System</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>🚦 Green Intelligent Transportation System</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Traffic Density</h2>
+      <p id="traffic">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h2>Pollution Level (CO₂)</h2>
+      <p id="pollution">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h2>Signal Status</h2>
+      <p id="signal">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h2>Fuel Saved</h2>
+      <p id="fuel">0 L</p>
+    </div>
+
+    <div class="card">
+      <h2>CO₂ Reduced</h2>
+      <p id="co2">0 kg</p>
+    </div>
+  </div>
+
+  <button id="emergencyBtn">🚑 Emergency Vehicle Detected</button>
+  <button id="resetBtn">🔄 Reset System</button>
+
+  <div class="charts">
+    <div class="chart-box">
+      <canvas id="trafficChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="co2Chart"></canvas>
+    </div>
+  </div>
+
+  <h3>Manual Simulation Control</h3>
+
+  <div class="manual">
+    <label>Traffic:</label>
+    <select id="manualTraffic">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <label>Pollution (ppm):</label>
+    <input type="number" id="manualPollution" value="200">
+
+    <button id="applyManual">Apply Manual</button>
+    <button id="autoMode">Auto Mode</button>
+  </div>
+
+  <!-- ✅ SCRIPT MUST BE LAST -->
+  <script src="script.js"></script>
+
+</body>
+</html>
