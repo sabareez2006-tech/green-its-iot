@@ -6,7 +6,8 @@ let totalFuelSaved = 0;
 let totalCO2Reduced = 0;
 let time = 0;
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://green-its-iot.onrender.com";
+
 
 const labels = [];
 const trafficData = [];
